@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: scroll #e3e3e9;
+}
+
+.wrapper{
+    width: 650px;
+    height: 650px;
+    background: #cc7a08;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.wrapper .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .time {
+    height: 100px;
+    background: rgb(17, 17, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper .time span {
+    width: 150px;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 200;
+    color: darkred;
+}
+
+
+.time span.separacion {
+    width: 5px;
+}
+
+.wrapper .botones {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.botones button {
+    padding: 6px 16px;
+    border: none;
+    margin: 0 10px;
+    background: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.botones button.activar,
+.botones button.Pararactivar {
+    pointer-events: none;
+    opacity: .6;
+}
+
+.mecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 100px;
+    height: 100px;
+    background: #0d0d0d;
+    position: fixed;
+    top: 0px;
+    left: calc(height/2);
+
+}
